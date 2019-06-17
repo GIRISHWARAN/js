@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TABLE</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jq.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<table id="t1">
+	<tr><th>Name</th><th>Age</th><th>Gender</th><th>DOB</th><th>Language</th><th>Address</th></tr>
+
+	</table>
+
+
+<script type="text/javascript">
+var name,age,dob,gender,language,address,array = [],lang;
+var decode = decodeURIComponent(window.location.href);
+console.log(decode);
+
+decode = decode.split("?");
+decode = decode[1].split(" ");
+
+console.log(decode);
+// array[i] = decode[i].split("=").slice(1);
+// for(var i = 0;i<decode.length;i++){
+
+
+// } console.log(array);
+var table = $("table");
+table.append("<tr>");
+for(var i=0;i<6;i++){
+table.append("<td>"+decode[i]+"</td>")
+
+}
+
+table.append("</tr>");
+
+</script>
+</body>
+</html>

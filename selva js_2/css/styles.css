@@ -1,0 +1,51 @@
+.back{
+	background:#f5d4f7;
+}
+.align{
+	background: #f3f9c7;
+	margin: 300px;
+	margin-top: 0cm;
+	padding-left: 70px;
+	border: 2px solid green;
+	height: 540px;
+}
+
+}
+#address{
+	margin-left: 21%;
+	
+}
+textarea{
+	margin-top: -13px;
+	margin-left: 136px;
+    width: 250px;
+    height: 100px;
+}
+#button{
+	margin-left: 250px;
+	margin-top: 20px;
+    background-color: #a9e57e;
+}
+table
+{
+	border-collapse: collapse;
+	margin-left: 22.3%;
+	margin-top:1cm;
+	background-color: #e8c174;
+
+	width: 735px;
+
+}
+
+table,td,th
+{
+border: 1px solid black;
+}
+/*tr
+{
+	height: 1cm;
+}*/
+.para{
+	margin-left: 3.7cm;
+	color: #22237a;
+}

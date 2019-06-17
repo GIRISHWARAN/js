@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<!-- <script type="text/javascript" src="regis.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jq.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="back">
+<h2 align="center"><b >Registration </b></h2>
+<div class="align">
+	<br>
+Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : 
+	<input id="sivuName" type="text" placeholder="Enter name" onkeypress= "return (event.charCode > 64 && 
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+<br>
+
+<span class="para" id="fv"></span>
+<br>
+<br>
+Age  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  :  
+	<input id="sivuAge" type="number" placeholder="Age" pattern="[0-9]{0-1}" >
+
+<br>
+<span class="para" id="fv1"></span>
+<br>
+<br>
+Gender &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :  
+  	<input class="sivuGender" type="radio" name="gender1" value="male" > Male</input>
+  	<input class="sivuGender" type="radio" name="gender1" value="female" > Female</input>
+   	<input class="sivuGender" type="radio" name="gender1" value="others" > Others</input>
+  <br>
+  <span class="para" id="fv2"></span>
+  <br>
+  <br>
+  DOB &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:
+  	<input  id="sivuDOB" type="date" pattern="[0-9]" >
+  <br>
+  <span class="para" id="fv4"></span> 
+  <br>
+  <br>
+  Languages Known &nbsp: 
+   <input  class="sivuLanguage" type="checkbox" name="languages1" value="Tamil">  Tamil</input>
+  <input class="sivuLanguage" type="checkbox" name="languages2" value="English"> English</input>
+  <input class="sivuLanguage" type="checkbox" name="languages3" value="Malayalam"> Malayalam</input>
+  <br>
+  <span class="para" id="fv3"></span>
+  <br>
+  <br>
+  <label="address">Address &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</label>
+   <div > 
+   	<textarea id="sivuAddress" name="Address" placeholder="current location" pattern="[A-Za-z0-9]"></textarea></div>
+    <span class="para" id="fv5"></span>
+    <br>
+    <br>
+  
+   <input id="button" type="button"  value="Submit">
+ </a>
+ </div>
+
+ <!-- <table id="t1">
+	<tr><th>Name</th><th>Age</th><th>Gender</th><th>DOB</th><th>Language</th><th>Address</th></tr>
+
+	</table> -->
+</div>
+</body>
+</html>
